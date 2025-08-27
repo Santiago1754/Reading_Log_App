@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reading Log</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">📚 Student Log</a> |
+        <a href="/teacher">👩‍🏫 Teacher Dashboard</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

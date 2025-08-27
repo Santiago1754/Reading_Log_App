@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Student Reading Log</h2>
+<form method="POST">
+    <label>Name:</label>
+    <input type="text" name="student" required><br><br>
+
+    <label>Book Title:</label>
+    <input type="text" name="book" required><br><br>
+
+    <label>Summary (optional):</label><br>
+    <textarea name="summary"></textarea><br><br>
+
+    <button type="submit">Log Book</button>
+</form>
+{% endblock %}
